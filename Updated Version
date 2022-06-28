@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content=
+	"width=device-width,initial-scale=1.0">
+
+
+	<link href=
+"https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+		integrity=
+"sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+		crossorigin="anonymous" rel="stylesheet">
+	<!-- Html2Pdf -->
+	<script src=
+"https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.8.1/html2pdf.bundle.min.js"
+		integrity=
+"sha512vDKWohFHe2vkVWXHp3tKvIxxXg0pJxeid5eo+UjdjME3DBFBn2F8yWOE0XmiFcFbXxrEOR1JriWEno5Ckpn15A=="
+		crossorigin="anonymous">
+	</script>
+
+
+</head>
+<body>
+  <div class="container mt-3">
+     <form id ="form-print" enctype="text/plain" 
+		class="form-control">
+    
+      <h3>
+      <p class="text-center" >
+        Accident Report
+      </p>
+      </h3>
+      
+        <h3>
+          <p class="text-center" >
+            Catholic Schools Office
+            </p>
+        </h3>
+          <h4>
+            <p class="text-center" >
+              Archdiocese of Galveston-Houston
+            </p>
+            </h4>
+            <p class="text-center" >
+              TO BE FILLED OUT FOR ALL ACCIDENTS POSSIBLY REQUIRING A PHYSICIAN  
+            </p>
+          
+               <!-- Text input -->
+            <div class="form-outline mb-4">
+                <label class="form-label" for="form6Example4">Name of the School:</label>
+                <input type="text" id="form6Example4" class="form-control" />
+              
+            </div>
+
+
+            <!-- 2 column grid layout with text inputs for the first and last names -->
+            <div class="row mb-4">
+              <div class="col">
+                <div class="form-outline">
+                    <label class="form-label" for="form6Example1">Name of Injured Person:</label>  
+                  <input type="text" id="form6Example1" class="form-control" />
+                  
+                </div>
+              </div>
+              <div class="col">
+               
+
+                
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                  <label class="form-check-label" for="flexCheckDefault">Student</label>
+                </div>
+                
+                <!-- Checked checkbox -->
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" />
+                  <label class="form-check-label" for="flexCheckChecked">Employee</label>
+                </div>
+                
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" />
+                  <label class="form-check-label" for="flexCheckChecked">Visitor</label>
+                </div>
+
+              </div>
+              <!-- Text input -->
+              <div class="col">
+                <div class="form-outline">
+                  <label class="form-label" for="form6Example2">DOB</label>
+                  <input type="date" id="form6Example2" class="form-control" />
+                
+              </div>
+                    
+                </div>     
+            </div>
+    
+            <div class="row mb-4">
+                <div class="col">
+                  <div class="form-outline">
+                    <label class="form-label" for="form6Example3">Sex:</label>
+                    <input type="text" id="form6Example3" class="form-control" />
+                
+                </div>
+                </div>
+                <div class="col">
+                  <div class="form-outline">
+                      <label class="form-label" for="form6Example2">Grade:</label>
+                      <input type="text" id="form6Example2" class="form-control" />
+                    
+                  </div>
+                </div>
+                <!-- Text input -->
+                <div class="col">
+                  <div class="form-outline">
+                          <label class="form-label" for="form6Example3">Are they Insured?</label>
+                          <input type="text" id="form6Example3" class="form-control" />
+                      
+                      </div>
+                     
+                  </div>     
+              </div>
+              <div class="row mb-4">
+                <div class="col">
+                  <div class="form-outline">
+                      <label class="form-label" for="form6Example1">Address:</label>  
+                    <input type="text" id="form6Example1" class="form-control" />
+                    
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="form-outline">
+                      <label class="form-label" for="form6Example2">City:</label>
+                      <input type="text" id="form6Example2" class="form-control" />
+                    
+                  </div>
+                </div>
+                <!-- Text input -->
+                <div class="col">
+                  <div class="form-outline">
+                          <label class="form-label" for="form6Example3">Zip Code:</label>
+                          <input type="number" id="form6Example3" class="form-control" />
+                      
+                      </div>
+                      
+                  </div>     
+              </div>
+              <div class="form-outline">
+                <label class="form-label" for="form6Example1">Phone Number:</label>  
+              <input type="tel" id="form6Example1" class="form-control" />
+              
+            </div>
+              <div class="row mb-4">
+                <div class="col">
+                  <div class="form-outline">
+                      <label class="form-label" for="form6Example1">Person in attendace:</label>  
+                    <input type="tel" id="form6Example1" class="form-control" />
+                    
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="form-outline">
+                      <label class="form-label" for="form6Example2">Date of accident:</label>
+                      <input type="date" id="form6Example2" class="form-control" />
+                    
+                  </div>
+                </div>
+                <!-- Text input -->
+                <div class="col">
+                  <div class="form-outline">
+                          <label class="form-label" for="form6Example3">Time of accident::</label>
+                          <input type="time" id="form6Example3" class="form-control" />
+                      
+                      </div>
+                      
+                  </div>     
+              </div>
+            
+          
+            <!-- # input -->
+           
+            <div class="form-outline mb-4">
+              <label class="form-label" for="form6Example3">Location of Accident:</label>
+              <input type="text" id="form6Example3" class="form-control" />
+            
+            </div>
+          <!-- Checkbox 
+          <div class="form-check d-flex justify-content-center mb-4">
+            <input class="form-check-input me-2" type="checkbox" value="" id="form6Example8" /> <checked>> 
+            <label class="form-check-label" for="form6Example8"> Testing check/might need to do container </label>
+          </div>
+        -->
+          <!-- Checkbox -->
+          <table class="table table-bordered">
+            <!-- Table head -->
+            <thead>
+              <tr>
+                <th>
+                  <!-- Default unchecked -->
+                  <div class="custom-control custom-checkbox">
+                    
+                    <label class="custom-control-label" for="tableDefaultCheck1">Nature of Accident</label>
+                  </div>
+                </th>
+                <th scope="row">
+                  <!-- Default unchecked -->
+                  <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="tableDefaultCheck4">
+                    <label class="custom-control-label" for="tableDefaultCheck4">OTHER</label>
+                  </div>
+                </th>
+                
+              </tr>
+            </thead>
+            <!-- Table head -->
+          <br>
+          </br>
+            <!-- Table body -->
+            <tbody>
+              <tr>
+                <th scope="row">
+                  <!-- Default unchecked -->
+                  <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="tableDefaultCheck2" >
+                    <label class="custom-control-label" for="tableDefaultCheck2">ABRAISON</label>
+                  </div>
+                </th>
+                <th scope="row">
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="tableDefaultCheck2" >
+                  <label class="custom-control-label" for="tableDefaultCheck2">BRUISE/BUMP</label>
+                </div>
+                </th>
+                <th scope="row">
+                  <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="tableDefaultCheck2" >
+                    <label class="custom-control-label" for="tableDefaultCheck2">BURN</label>
+                  </div>
+                  </th>
+                  <th scope="row">
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="tableDefaultCheck2" >
+                      <label class="custom-control-label" for="tableDefaultCheck2">CUT</label>
+                    </div>
+                    </th>
+              </tr>
+              <tr>
+                <th scope="row">
+                  <!-- Default unchecked -->
+                  <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="tableDefaultCheck3">
+                    <label class="custom-control-label" for="tableDefaultCheck3">CONVULSION</label>
+                  </div>
+                </th>
+                <th scope="row">
+                  <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="tableDefaultCheck2" >
+                    <label class="custom-control-label" for="tableDefaultCheck2">DISLOCATION</label>
+                  </div>
+                  </th>
+                  <th scope="row">
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="tableDefaultCheck2" >
+                      <label class="custom-control-label" for="tableDefaultCheck2">FRACTURE</label>
+                    </div>
+                    </th>
+                    <th scope="row">
+                      <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="tableDefaultCheck2" >
+                        <label class="custom-control-label" for="tableDefaultCheck2">HEAD INJURY</label>
+                      </div>
+                      </th>
+                
+                
+              </tr>
+              <tr>
+                <th scope="row">
+                  <!-- Default unchecked -->
+                  <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="tableDefaultCheck4">
+                    <label class="custom-control-label" for="tableDefaultCheck4">LACERATION</label>
+                  </div>
+                </th>
+                <th scope="row">
+                  <!-- Default unchecked -->
+                  <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="tableDefaultCheck4">
+                    <label class="custom-control-label" for="tableDefaultCheck4">PUNCTURE</label>
+                  </div>
+                </th>
+                <th scope="row">
+                  <!-- Default unchecked -->
+                  <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="tableDefaultCheck4">
+                    <label class="custom-control-label" for="tableDefaultCheck4">SHOCK</label>
+                  </div>
+                </th>
+                <th scope="row">
+                  <!-- Default unchecked -->
+                  <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="tableDefaultCheck4">
+                    <label class="custom-control-label" for="tableDefaultCheck4">SPRAIN</label>
+                  </div>
+                </th>
+                
+                
+  
+            
+              </tr>
+            </tbody>
+            
+          </table>
+          <!-- Table  -->
+          
+          <table class="table table-bordered">
+            <!-- Table head -->
+            <thead>
+              <tr>
+                <th>
+                  <!-- Default unchecked -->
+                  <div class="custom-control custom-checkbox">
+                    
+                    <label class="custom-control-label" for="tableDefaultCheck1">Party of body injured</label>
+                  </div>
+                </th>
+                <th scope="row">
+                  <!-- Default unchecked -->
+                  <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="tableDefaultCheck4">
+                    <label class="custom-control-label" for="tableDefaultCheck4">OTHER</label>
+                  </div>
+                </th>
+                
+              </tr>
+            </thead>
+            <!-- Table head -->
+          <br>
+          </br>
+            <!-- Table body -->
+            <tbody>
+              <tr>
+                <th scope="row">
+                  <!-- Default unchecked -->
+                  <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="tableDefaultCheck2" >
+                    <label class="custom-control-label" for="tableDefaultCheck2">ABDOMEN</label>
+                  </div>
+                </th>
+                <th scope="row">
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="tableDefaultCheck2" >
+                  <label class="custom-control-label" for="tableDefaultCheck2">ANKLE</label>
+                </div>
+                </th>
+                <th scope="row">
+                  <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="tableDefaultCheck2" >
+                    <label class="custom-control-label" for="tableDefaultCheck2">ARM*</label>
+                  </div>
+                  </th>
+                  <th scope="row">
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="tableDefaultCheck2" >
+                      <label class="custom-control-label" for="tableDefaultCheck2">BACK/SPINE</label>
+                    </div>
+                    </th>
+              </tr>
+              <tr>
+                <th scope="row">
+                  <!-- Default unchecked -->
+                  <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="tableDefaultCheck3">
+                    <label class="custom-control-label" for="tableDefaultCheck3">CHEST</label>
+                  </div>
+                </th>
+                <th scope="row">
+                  <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="tableDefaultCheck2" >
+                    <label class="custom-control-label" for="tableDefaultCheck2">ELBOW*</label>
+                  </div>
+                  </th>
+                  <th scope="row">
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="tableDefaultCheck2" >
+                      <label class="custom-control-label" for="tableDefaultCheck2">EYE*</label>
+                    </div>
+                    </th>
+                    <th scope="row">
+                      <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="tableDefaultCheck2" >
+                        <label class="custom-control-label" for="tableDefaultCheck2">FACE</label>
+                      </div>
+                      </th>
+                
+                
+              </tr>
+              <tr>
+                <th scope="row">
+                  <!-- Default unchecked -->
+                  <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="tableDefaultCheck4">
+                    <label class="custom-control-label" for="tableDefaultCheck4">FINGER*</label>
+                  </div>
+                </th>
+                <th scope="row">
+                  <!-- Default unchecked -->
+                  <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="tableDefaultCheck4">
+                    <label class="custom-control-label" for="tableDefaultCheck4">FOOT</label>
+                  </div>
+                </th>
+                <th scope="row">
+                  <!-- Default unchecked -->
+                  <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="tableDefaultCheck4">
+                    <label class="custom-control-label" for="tableDefaultCheck4">HAND</label>
+                  </div>
+                </th>
+                <th scope="row">
+                  <!-- Default unchecked -->
+                  <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="tableDefaultCheck4">
+                    <label class="custom-control-label" for="tableDefaultCheck4">HEAD<label>
+                  </div>
+                </th>
+                
+                
+  
+            
+              </tr>
+
+              <tr>
+
+                <th scope="row">
+                  <!-- Default unchecked -->
+                  <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="tableDefaultCheck4">
+                    <label class="custom-control-label" for="tableDefaultCheck4">HIP*<label>
+                  </div>
+                </th>
+                <th scope="row">
+                  <!-- Default unchecked -->
+                  <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="tableDefaultCheck4">
+                    <label class="custom-control-label" for="tableDefaultCheck4">KNEE*<label>
+                  </div>
+                </th>
+                <th scope="row">
+                  <!-- Default unchecked -->
+                  <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="tableDefaultCheck4">
+                    <label class="custom-control-label" for="tableDefaultCheck4">LEG*<label>
+                  </div>
+                </th>
+
+                <th scope="row">
+                  <!-- Default unchecked -->
+                  <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="tableDefaultCheck4">
+                    <label class="custom-control-label" for="tableDefaultCheck4">LIP<label>
+                  </div>
+                </th>
+
+
+              </tr>
+
+              <tr>
+                <th scope="row">
+                  <!-- Default unchecked -->
+                  <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="tableDefaultCheck4">
+                    <label class="custom-control-label" for="tableDefaultCheck4">MOUTH<label>
+                  </div>
+                </th>
+                <th scope="row">
+                  <!-- Default unchecked -->
+                  <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="tableDefaultCheck4">
+                    <label class="custom-control-label" for="tableDefaultCheck4">NECK<label>
+                  </div>
+                </th>
+                <th scope="row">
+                  <!-- Default unchecked -->
+                  <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="tableDefaultCheck4">
+                    <label class="custom-control-label" for="tableDefaultCheck4">TEETH<label>
+                  </div>
+                </th>
+                <th scope="row">
+                  <!-- Default unchecked -->
+                  <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="tableDefaultCheck4">
+                    <label class="custom-control-label" for="tableDefaultCheck4">WRIST*<label>
+                  </div>
+                </th>
+              </tr>
+            </tbody>
+            
+          </table>
+          <div class="form-outline">
+            <h6>If other or * (indicate right, left, or both), please explain below?</h6>
+            <input type="text" id="form6Example3" class="form-control" />
+        
+        </div>
+            <!-- TEXT box -->
+            <div class="form-outline mb-4">
+              <label class="form-label" for="form6Example3">How did it happen?</label>
+               <textarea class="form-control" id="textAreaExample1" rows="4"></textarea>
+            </div>
+
+            <!-- checkbox input -->
+            <div class="form-check">
+              <h4> Were parent(s) or family notified?</h4>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                  <label class="form-check-label" for="flexCheckDefault">YES</label>
+                </div>
+                
+                <!-- Checked checkbox -->
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" />
+                  <label class="form-check-label" for="flexCheckChecked">NO</label>
+                </div>
+                <!-- Text input -->
+                <div class="form-outline mb-4">
+                  <label class="form-label" for="form6Example3">If so, by whom?
+                  <input type="text" id="form6Example3" class="form-control" />
+                
+              </div>
+              </div>
+
+
+                <!-- Text input -->
+                <div class="form-outline mb-4">
+                    <label class="form-label" for="form6Example3">When?</label>
+                    <input type="datetime-local" id="form6Example3" class="form-control" />
+                  
+                </div>
+           
+                <div class="form-check">
+                  <h4> Did Parents come to the school?</h4>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                      <label class="form-check-label" for="flexCheckDefault">YES</label>
+                    </div>
+                    
+                    <!-- Checked checkbox -->
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" />
+                      <label class="form-check-label" for="flexCheckChecked">NO</label>
+                    </div>
+
+
+
+                      <div class="form-outline mb-4">
+                      <label class="form-label" for="form6Example3">Reporter Name:</label>
+                      <input type="text" id="form6Example3" class="form-control" />
+                    
+                    </div>
+
+                
+                    <div class="form-outline mb-4">
+                      <label class="form-label" for="form6Example3">Today's date:</label>
+                      <input type="date" id="form6Example3" class="form-control" />
+                    
+                  </div>
+
+            <!-- Submit button -->
+            <input type="button" class="btn btn-primary" 
+          onclick="GeneratePdf();" value="PDF">
+          </form>
+    
+    
+    </div>
+    
+
+	<script>		
+		// Function to GeneratePdf
+		function GeneratePdf() {
+			var element = document.getElementById('form-print');
+			html2pdf(element);
+        
+		}
+	</script>
+	<script src=
+"https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+		integrity=
+"sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+		crossorigin="anonymous">
+	</script>
+</body>
+
+</html>
+
